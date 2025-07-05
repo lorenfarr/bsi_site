@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-header bg-primary text-white py-5">
+    <div class="container">
+        <h1 class="display-4">Life Insurance</h1>
+        <p class="lead">Protect your family's future with comprehensive life insurance coverage</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Protect Your Family's Future</h2>
+                <p>Life insurance provides financial security for your loved ones when they need it most. Our comprehensive life insurance policies offer peace of mind and financial protection.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Term Life Insurance</h5>
+                                <p class="card-text">Affordable coverage for a specific period, perfect for young families and those with temporary financial obligations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Whole Life Insurance</h5>
+                                <p class="card-text">Permanent coverage with cash value that grows over time, providing lifelong protection and investment benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="mt-5">Why Choose Our Life Insurance?</h3>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success me-2"></i> Competitive rates</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Fast approval process</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Excellent customer service</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Multiple coverage options</li>
+                </ul>
+                
+                <div class="mt-4">
+                    <a href="{% url 'main:quote' %}" class="btn btn-primary btn-lg">Get a Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Need Help?</h5>
+                        <p class="card-text">Our insurance experts are here to help you find the perfect coverage for your needs.</p>
+                        <p><i class="fas fa-phone text-primary me-2"></i> (555) 123-4567</p>
+                        <a href="{% url 'main:contact' %}" class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

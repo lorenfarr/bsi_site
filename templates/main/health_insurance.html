@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-header bg-success text-white py-5">
+    <div class="container">
+        <h1 class="display-4">Health Insurance</h1>
+        <p class="lead">Secure your health with comprehensive health insurance plans</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>Secure Your Health and Finances</h2>
+                <p>Health insurance is essential for protecting both your health and your finances. Our health insurance plans provide comprehensive coverage for all your medical needs.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Individual Plans</h5>
+                                <p class="card-text">Comprehensive coverage for individuals and families with flexible options to meet your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Group Plans</h5>
+                                <p class="card-text">Cost-effective employer-sponsored coverage that provides excellent benefits for your employees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="mt-5">Benefits of Our Health Insurance</h3>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success me-2"></i> Wide network of healthcare providers</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Prescription drug coverage</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Preventive care included</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 24/7 customer support</li>
+                </ul>
+                
+                <div class="mt-4">
+                    <a href="{% url 'main:contact' %}" class="btn btn-success btn-lg">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Get a Quote</h5>
+                        <p class="card-text">Find the right health insurance plan for your needs and budget.</p>
+                        <a href="{% url 'main:quote' %}" class="btn btn-success">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
