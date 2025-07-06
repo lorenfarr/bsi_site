@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'brightstead_insurance.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'brightstead_insurance_database',
+        'USER': 'yhlrertjcl',
+        'PASSWORD': 'wc7dJ$dXbY1QeQ2C',
+        'HOST': '127.0.0.1',  # Use 'localhost' or '127.0.0.1'
+        'PORT': '5432',       # Corrected port number
     }
 }
 
