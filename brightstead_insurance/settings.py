@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-&$&#nt=yy*zvu@0e0!a*z7g0e+o)+ebnn2mz8)_peae4524v(8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'bright-stead-site-f8fqavhrerbrc2a0.westus2-01.azurewebsites.net',
+    'brightsteadinsurance.com',
+    'www.brightsteadinsurance.com',
+    'localhost',
+]
 
 # Application definition
 
